@@ -6,7 +6,6 @@ import org.springframework.stereotype.Component;
 import java.util.Map;
 import java.util.Scanner;
 
-@Component
 public class Car implements Vehicle{
 
     private final Map<String, VehicleModel> modelMap;
