@@ -28,9 +28,9 @@ public class Car implements Vehicle{
         int option = scanner.nextInt();
 
         if(option == 1){
-            vehicleModel = modelMap.get("tataHarrier");
+            vehicleModel = modelMap.get("getTataHarrier");
         } else if (option == 2) {
-            vehicleModel = modelMap.get("toyotaInnova");
+            vehicleModel = modelMap.get("getToyotaInnova");
         } else {
             System.out.println("Invalid Option");
         }

@@ -27,9 +27,9 @@ public class Bike implements Vehicle{
         int option = scanner.nextInt();
 
         if(option == 1){
-            vehicleModel = modelMap.get("yamahaR15");
+            vehicleModel = modelMap.get("getYamahaR15");
         } else if (option == 2) {
-            vehicleModel = modelMap.get("royalEnfield");
+            vehicleModel = modelMap.get("getRoyalEnfield");
         } else {
             System.out.println("Invalid Option");
         }

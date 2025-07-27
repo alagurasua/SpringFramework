@@ -1,7 +1,7 @@
 package org.example;
 
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import java.util.Scanner;
 
@@ -15,13 +15,13 @@ public class SpringCoreSampleApp
 
         Vehicle vehicle = null;
 
-        ApplicationContext context = new ClassPathXmlApplicationContext("ApplicationContext.xml");
+        ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
         if(option.equalsIgnoreCase("Car")){
-            vehicle = (Vehicle) context.getBean("car");
+            vehicle = (Vehicle) context.getBean(Car.class);
 
         } else if (option.equalsIgnoreCase("Bike")) {
-            vehicle = (Vehicle) context.getBean("bike");
+            vehicle = (Vehicle) context.getBean(Bike.class);
         }
 
         if(vehicle != null)
