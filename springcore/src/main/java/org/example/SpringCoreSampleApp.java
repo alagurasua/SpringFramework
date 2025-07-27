@@ -18,10 +18,10 @@ public class SpringCoreSampleApp
         ApplicationContext context = new ClassPathXmlApplicationContext("ApplicationContext.xml");
 
         if(option.equalsIgnoreCase("Car")){
-            vehicle = (Vehicle) context.getBean("MyCar");
+            vehicle = (Vehicle) context.getBean("car");
 
         } else if (option.equalsIgnoreCase("Bike")) {
-            vehicle = (Vehicle) context.getBean("MyBike");
+            vehicle = (Vehicle) context.getBean("bike");
         }
 
         if(vehicle != null)

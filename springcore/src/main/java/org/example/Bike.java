@@ -1,10 +1,12 @@
 package org.example;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.util.Map;
 import java.util.Scanner;
 
+@Component
 public class Bike implements Vehicle{
 
     private final Map<String, VehicleModel> modelMap;
@@ -25,9 +27,9 @@ public class Bike implements Vehicle{
         int option = scanner.nextInt();
 
         if(option == 1){
-            vehicleModel = modelMap.get("MyYamahaR15");
+            vehicleModel = modelMap.get("yamahaR15");
         } else if (option == 2) {
-            vehicleModel = modelMap.get("MyRoyalEnfield");
+            vehicleModel = modelMap.get("royalEnfield");
         } else {
             System.out.println("Invalid Option");
         }
