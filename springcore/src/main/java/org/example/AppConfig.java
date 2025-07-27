@@ -10,7 +10,7 @@ import java.util.Map;
 @ComponentScan
 public class AppConfig {
 
-    @Bean
+    /*@Bean
     public Car getCar(Map<String, VehicleModel> modelMap){
         return new Car(modelMap);
     }
@@ -38,5 +38,5 @@ public class AppConfig {
     @Bean
     public RoyalEnfield getRoyalEnfield(){
         return new RoyalEnfield();
-    }
+    }*/
 }
